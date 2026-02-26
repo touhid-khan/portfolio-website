@@ -42,6 +42,7 @@ footer {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
+
 @media (max-width: 600px) {
     header {
         padding: 30px 10px;
@@ -50,4 +51,29 @@ footer {
     section {
         padding: 10px;
     }
+}
+
+nav {
+    background: #0f172a;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #2563eb;
 }
