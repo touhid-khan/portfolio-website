@@ -1,79 +1,118 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f6f8;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
     color: #333;
 }
 
-header {
-    background-color: #1e293b;
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
+/* NAVIGATION */
+.navbar {
+    background: #0b0c10;
+    padding: 15px;
 }
 
+.container {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-menu a:hover {
+    color: #2563eb;
+}
+
+/* HERO */
+.hero {
+    background: #16213e;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #2563eb;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background: #1e40af;
+}
+
+/* SECTIONS */
 section {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
+    padding: 60px 20px;
+    text-align: center;
 }
 
 h2 {
-    border-bottom: 2px solid #2563eb;
-    padding-bottom: 10px;
-}
-
-ul {
-    list-style-type: square;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #1e293b;
-    color: white;
-}
-
-.project {
-    background: white;
-    padding: 20px;
+    font-size: 28px;
     margin-bottom: 20px;
+    color: #16213e;
+}
+
+/* Skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.skill-card {
+    background: white;
+    padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    font-weight: bold;
+    color: #16213e;
 }
 
-@media (max-width: 600px) {
-    header {
-        padding: 30px 10px;
-    }
-
-    section {
-        padding: 10px;
-    }
-}
-
-nav {
-    background: #0f172a;
-    padding: 10px;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-}
-
-nav li {
-    margin: 0 15px;
-}
-
-nav a {
+/* FOOTER */
+footer {
+    background: #0b0c10;
     color: white;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: #2563eb;
+    padding: 15px;
 }
