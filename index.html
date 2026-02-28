@@ -48,7 +48,7 @@
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="section-light">
+<section id="about" class="section-light fade-in">
     <div class="container">
         <h2>About Me</h2>
         <p class="section-text">
@@ -60,7 +60,7 @@
 </section>
 
 <!-- SKILLS -->
-<section id="services" class="section-dark">
+<section id="services" class="section-dark fade-in">
     <div class="container">
         <h2>Technical Skills</h2>
 
@@ -76,7 +76,7 @@
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="section-light">
+<section id="projects" class="section-light fade-in">
     <div class="container">
         <h2>Projects</h2>
 
@@ -102,7 +102,7 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section-dark">
+<section id="contact" class="section-dark fade-in">
     <div class="container">
         <h2>Contact</h2>
         <p>Email: touhidkhan86844@gmail.com</p>
@@ -124,6 +124,29 @@ window.addEventListener("scroll", function() {
     } else {
         navbar.style.background = "#0f172a";
     }
+});
+</script>
+
+<script>
+const faders = document.querySelectorAll(".fade-in");
+
+const appearOptions = {
+    threshold: 0.3
+};
+
+const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return;
+        } else {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
+        }
+    });
+}, appearOptions);
+
+faders.forEach(fader => {
+    appearOnScroll.observe(fader);
 });
 </script>
 
