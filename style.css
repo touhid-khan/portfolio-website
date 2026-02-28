@@ -112,7 +112,7 @@ body {
 .section-dark {
     padding: 100px 0;
     text-align: center;
-    background: #0f172a;
+    background: linear-gradient(to right, #0f172a, #1e293b);
     color: white;
 }
 
@@ -129,11 +129,18 @@ body {
     margin-top: 40px;
 }
 
-.card, .project-card {
-    background: white;
+.card {
+    background: rgba(255,255,255,0.05);
     padding: 30px;
     border-radius: 10px;
     transition: 0.3s;
+    color: white;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover {
+    background: #3b82f6;
+    transform: translateY(-8px);
 }
 
 .project-card {
