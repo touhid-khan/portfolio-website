@@ -109,3 +109,20 @@ const navLinks = document.querySelector(".nav-links");
 hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 });
+
+// ================= SKILL ANIMATION =================
+const skillSection = document.querySelector("#services");
+const progressBars = document.querySelectorAll(".progress-fill");
+
+const skillObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            progressBars.forEach(bar => {
+                bar.style.width = bar.getAttribute("data-width");
+            });
+            skillObserver.unobserve(skillSection);
+        }
+    });
+}, { threshold: 0.5 });
+
+skillObserver.observe(skillSection);

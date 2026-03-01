@@ -206,10 +206,11 @@ body {
 }
 
 .progress-fill {
+    width: 0;
     background: #3b82f6;
     height: 100%;
     border-radius: 20px;
-    transition: 1.5s;
+    transition: width 1.5s ease;
 }
 
 /* ================= PROJECTS ================= */
