@@ -62,14 +62,14 @@ typeEffect();
 // ================= PARTICLES =================
 particlesJS("particles-js", {
     particles: {
-        number: { value: 60 },
+        number: { value: 80 },     // more particles
         size: { value: 3 },
-        move: { speed: 2 },
+        move: { speed: 1.8 },
         line_linked: {
             enable: true,
-            distance: 150,
-            color: "#3b82f6",
-            opacity: 0.4,
+            distance: 140,
+            color: "#000000",
+            opacity: 0.5,
             width: 1
         }
     }
