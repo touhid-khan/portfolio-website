@@ -327,3 +327,43 @@ footer {
         height: 220px;
     }
 }
+
+/* ================= HAMBURGER ================= */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    transition: 0.3s;
+}
+
+/* Mobile Menu */
+@media(max-width: 768px) {
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #0f172a;
+        width: 200px;
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+        display: none;
+        border-radius: 0 0 0 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
