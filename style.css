@@ -312,23 +312,58 @@ body {
 }
 
 /* ================= SKILLS ================= */
-.skill-bar {
+/* ================= SKILLS SECTION ================= */
+.skills-section {
+    padding: 120px 0;
+    background: #f8fafc;
+    text-align: center;
+}
+
+.skills-heading {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #0f172a;
+}
+
+.skills-subtext {
     max-width: 600px;
+    margin: 0 auto 60px;
+    font-size: 16px;
+    color: #475569;
+    line-height: 1.8;
+}
+
+.skills-wrapper {
+    max-width: 700px;
     margin: auto;
     text-align: left;
 }
 
+.skill-item {
+    margin-bottom: 35px;
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #0f172a;
+}
+
 .progress {
-    background: rgba(255,255,255,0.1);
-    height: 10px;
+    background: #e2e8f0;
+    height: 8px;
     border-radius: 20px;
-    margin-bottom: 20px;
+    overflow: hidden;
 }
 
 .progress-fill {
     width: 0;
-    background: #3b82f6;
     height: 100%;
+    background: #616ff0;
     border-radius: 20px;
     transition: width 1.5s ease;
 }
