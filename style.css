@@ -368,3 +368,14 @@ footer {
         display: flex;
     }
 }
+
+/* ================= SCROLL PROGRESS ================= */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #3b82f6, #9333ea);
+    width: 0%;
+    z-index: 2000;
+}

@@ -126,3 +126,12 @@ const skillObserver = new IntersectionObserver(entries => {
 }, { threshold: 0.5 });
 
 skillObserver.observe(skillSection);
+
+// ================= SCROLL PROGRESS =================
+window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.body.scrollHeight - window.innerHeight;
+    const progress = (scrollTop / docHeight) * 100;
+
+    document.querySelector(".scroll-progress").style.width = progress + "%";
+});
