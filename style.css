@@ -126,6 +126,25 @@ html {
     color: #3b82f6;
 }
 
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-container {
+    position: relative;
+    z-index: 2;
+}
+
 /* SECTIONS */
 .section-light {
     padding: 100px 0;

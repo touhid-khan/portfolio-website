@@ -27,6 +27,7 @@
 
 <!-- HERO SECTION -->
 <section class="hero">
+    <div id="particles-js"></div>
     <div class="container hero-container">
 
         <div class="hero-text">
@@ -194,6 +195,25 @@ function typeEffect() {
 }
 
 typeEffect();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+<script>
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 60 },
+    size: { value: 3 },
+    move: { speed: 2 },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#3b82f6",
+      opacity: 0.4,
+      width: 1
+    }
+  }
+});
 </script>
 </body>
 </html>
