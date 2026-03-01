@@ -73,6 +73,9 @@ html {
 .hero-text h1 {
     font-size: 52px;
     font-weight: 700;
+    background: linear-gradient(90deg, #3b82f6, #9333ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero-text h2 {
