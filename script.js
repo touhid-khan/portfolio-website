@@ -1,11 +1,11 @@
 // ================= NAVBAR SCROLL EFFECT =================
-window.addEventListener("scroll", function () {
-    const navbar = document.querySelector(".navbar");
+const navbar = document.querySelector(".navbar");
 
+window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
-        navbar.style.background = "#0b1220";
+        navbar.classList.add("scrolled");
     } else {
-        navbar.style.background = "#0f172a";
+        navbar.classList.remove("scrolled");
     }
 });
 
