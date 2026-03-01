@@ -32,7 +32,7 @@
         <div class="hero-text">
             <p class="small-intro">Hello, I'm</p>
             <h1>Touhid Khan</h1>
-            <h2>Web Developer & Programmer</h2>
+            <h2><span id="typing"></span></h2>
             <p class="hero-desc">
                 Computer Programming graduate focused on building modern,
                 responsive, and performance-driven web experiences.
@@ -150,5 +150,37 @@ faders.forEach(fader => {
 });
 </script>
 
+<script>
+const roles = ["Web Developer", "Frontend Developer", "Programmer"];
+let index = 0;
+let charIndex = 0;
+let currentRole = "";
+let isDeleting = false;
+
+function typeEffect() {
+    currentRole = roles[index];
+
+    if (!isDeleting) {
+        document.getElementById("typing").textContent =
+            currentRole.substring(0, charIndex++);
+        if (charIndex > currentRole.length) {
+            isDeleting = true;
+            setTimeout(typeEffect, 1000);
+            return;
+        }
+    } else {
+        document.getElementById("typing").textContent =
+            currentRole.substring(0, charIndex--);
+        if (charIndex < 0) {
+            isDeleting = false;
+            index = (index + 1) % roles.length;
+        }
+    }
+
+    setTimeout(typeEffect, isDeleting ? 50 : 100);
+}
+
+typeEffect();
+</script>
 </body>
 </html>
