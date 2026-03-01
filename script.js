@@ -29,7 +29,11 @@ faders.forEach(fader => appearOnScroll.observe(fader));
 
 
 // ================= TYPING EFFECT =================
-const roles = ["Web Developer", "Frontend Developer", "Programmer"];
+const roles = [
+    "web applications",
+    "frontend interfaces",
+    "digital experiences"
+];
 let index = 0;
 let charIndex = 0;
 let isDeleting = false;
