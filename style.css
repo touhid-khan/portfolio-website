@@ -292,6 +292,80 @@ body {
     }
 }
 
+/* ================= PROJECTS SECTION ================= */
+.projects-section {
+    padding: 120px 0;
+    background: #ffffff;
+    text-align: center;
+}
+
+.projects-heading {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #0f172a;
+}
+
+.projects-subtext {
+    max-width: 600px;
+    margin: 0 auto 70px;
+    font-size: 16px;
+    color: #475569;
+    line-height: 1.8;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    text-align: left;
+}
+
+.project-card {
+    background: #f8fafc;
+    padding: 35px;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.06);
+}
+
+.project-type {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #3b82f6;
+    font-weight: 600;
+}
+
+.project-card h3 {
+    margin: 15px 0 15px;
+    font-size: 22px;
+    color: #0f172a;
+}
+
+.project-card p {
+    font-size: 15px;
+    color: #475569;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.project-link {
+    text-decoration: none;
+    font-weight: 600;
+    color: #0f172a;
+    transition: 0.3s;
+}
+
+.project-link:hover {
+    color: #3b82f6;
+}
+
 /* ================= SECTIONS ================= */
 .section-light {
     padding: 100px 0;
@@ -311,7 +385,6 @@ body {
     margin: 20px auto;
 }
 
-/* ================= SKILLS ================= */
 /* ================= SKILLS SECTION ================= */
 .skills-section {
     padding: 120px 0;
