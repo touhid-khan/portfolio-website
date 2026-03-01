@@ -102,11 +102,12 @@ html {
     background: #2563eb;
 }
 
-.image-placeholder {
+.profile-img {
     width: 300px;
     height: 300px;
-    background: #3b82f6;
+    object-fit: cover;
     border-radius: 50%;
+    border: 5px solid #3b82f6;
 }
 
 .social-icons {
