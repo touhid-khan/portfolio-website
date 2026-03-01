@@ -203,12 +203,13 @@ html {
     backdrop-filter: blur(10px);
     padding: 30px;
     border-radius: 15px;
-    transition: 0.3s;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    transform-style: preserve-3d;
 }
 
 .card:hover, .project-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    transform: rotateY(8deg) rotateX(5deg);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.2);
 }
 
 /* Skill Bar */
