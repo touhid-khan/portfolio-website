@@ -109,6 +109,22 @@ html {
     border-radius: 50%;
 }
 
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #3b82f6;
+}
+
 /* SECTIONS */
 .section-light {
     padding: 100px 0;
