@@ -97,7 +97,7 @@
 
         <div class="project-grid">
 
-            <div class="project-card">
+            <div class="project-card" onclick="openModal()">
                 <h3>Portfolio Website</h3>
                 <p>Responsive personal portfolio built with HTML & CSS.</p>
             </div>
@@ -115,6 +115,14 @@
         </div>
     </div>
 </section>
+
+<div id="projectModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Portfolio Website</h2>
+        <p>This project showcases my design skills and responsive layout development.</p>
+    </div>
+</div>
 
 <!-- CONTACT -->
 <section id="contact" class="section-dark fade-in">
@@ -224,6 +232,16 @@ document.addEventListener("mousemove", e => {
     cursor.style.top = e.clientY + "px";
     cursor.style.left = e.clientX + "px";
 });
+</script>
+
+<script>
+function openModal() {
+    document.getElementById("projectModal").style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("projectModal").style.display = "none";
+}
 </script>
 
 </body>
