@@ -199,11 +199,37 @@ body {
     background: #1e293b;
 }
 
-.profile-img {
+/* ================= PROFILE IMAGE ================= */
+.profile-wrapper {
     width: 340px;
     height: 340px;
+    border-radius: 50%;
+    padding: 6px; /* gradient ring thickness */
+    background: linear-gradient(135deg, #3b82f6, #9333ea);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
     object-fit: cover;
-    border-radius: 20px;
+    display: block;
+    background: white;
+}
+
+/* Add subtle depth */
+.profile-wrapper {
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover effect */
+.profile-wrapper:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 35px 70px rgba(0, 0, 0, 0.2);
 }
 
 .social-icons {
@@ -490,8 +516,10 @@ footer {
         box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     }
 
-    .profile-img {
+    
+    .profile-wrapper {
         width: 220px;
         height: 220px;
+        margin: 0 auto;
     }
 }
