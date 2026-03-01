@@ -42,6 +42,7 @@ body {
     z-index: 1000;
     background: transparent;
     transition: all 0.3s ease;
+    border-bottom: 1px solid #e2e8f0;
 }
 
 .navbar.scrolled {
@@ -59,21 +60,21 @@ body {
 .logo {
     color: #0f172a;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 35px;
 }
 
 .nav-links a {
-    position: relative;
+    position : relative;
     text-decoration: none;
     color: #0f172a;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 18px;      
     letter-spacing: 1px;
     transition: 0.3s;
 }
