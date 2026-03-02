@@ -96,3 +96,81 @@ window.addEventListener("scroll", () => {
     const progress = (scrollTop / docHeight) * 100;
     document.querySelector(".scroll-progress").style.width = progress + "%";
 });
+
+const projectCards = document.querySelectorAll(".project-card");
+const modal = document.getElementById("projectModal");
+const modalTitle = document.getElementById("modalTitle");
+const modalDescription = document.getElementById("modalDescription");
+const modalLink = document.getElementById("modalLink");
+const modalImage = document.getElementById("modalImage");
+const closeModal = document.querySelector(".close-modal");
+const filterButtons = document.querySelectorAll(".filter-btn");
+
+const projectData = {
+  weather: {
+    title: "Weather App",
+    description: "Real-time weather app using API integration and dynamic DOM updates.",
+    link: "https://touhid-khan.github.io/weather-app/",
+    image: "img/weather.png"
+  },
+  portfolio: {
+    title: "Portfolio Website",
+    description: "Fully responsive portfolio built using modern UI/UX principles.",
+    link: "https://touhid-khan.github.io/portfolio-website/",
+    image: "img/portfolio.png"
+  },
+  calculator: {
+    title: "Calculator App",
+    description: "Interactive calculator with operator logic and clean UI.",
+    link: "https://touhid-khan.github.io/calculator-app/",
+    image: "img/calculator.png"
+  }
+};
+
+/* ================= MODAL ================= */
+
+projectCards.forEach(card => {
+  card.addEventListener("click", () => {
+    const project = card.getAttribute("data-project");
+
+    modalTitle.textContent = projectData[project].title;
+    modalDescription.textContent = projectData[project].description;
+    modalLink.href = projectData[project].link;
+    modalImage.src = projectData[project].image;
+
+    modal.classList.add("active");
+  });
+});
+
+closeModal.addEventListener("click", () => {
+  modal.classList.remove("active");
+});
+
+window.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.classList.remove("active");
+  }
+});
+
+/* ================= FILTERING ================= */
+
+filterButtons.forEach(button => {
+  button.addEventListener("click", () => {
+
+    filterButtons.forEach(btn => btn.classList.remove("active"));
+    button.classList.add("active");
+
+    const filter = button.getAttribute("data-filter");
+
+    projectCards.forEach(card => {
+      const category = card.getAttribute("data-category");
+
+      if (filter === "all" || category.includes(filter)) {
+        card.classList.remove("hide");
+      } else {
+        card.classList.add("hide");
+      }
+    });
+
+  });
+});
