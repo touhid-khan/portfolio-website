@@ -111,19 +111,19 @@ const projectData = {
     title: "Weather App",
     description: "Real-time weather app using API integration and dynamic DOM updates.",
     link: "https://touhid-khan.github.io/weather-app/",
-    image: "img/weather.png"
+    image: "img/project/weather.png"
   },
   portfolio: {
     title: "Portfolio Website",
     description: "Fully responsive portfolio built using modern UI/UX principles.",
     link: "https://touhid-khan.github.io/portfolio-website/",
-    image: "img/portfolio.png"
+    image: "img/project/portfolio.png"
   },
   calculator: {
     title: "Calculator App",
     description: "Interactive calculator with operator logic and clean UI.",
     link: "https://touhid-khan.github.io/calculator-app/",
-    image: "img/calculator.png"
+    image: "img/project/calculator.png"
   }
 };
 
