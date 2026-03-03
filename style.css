@@ -188,6 +188,29 @@ section {
     background: #1e293b;
 }
 
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-secondary {
+    display: inline-block;
+    padding: 13px 26px;
+    background: transparent;
+    color: #0f172a;
+    border: 2px solid #0f172a;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: #0f172a;
+    color: white;
+}
+
 /* ================= PROFILE IMAGE ================= */
 .profile-wrapper {
     width: 340px;
