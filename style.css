@@ -329,6 +329,13 @@ section {
     margin-bottom: 30px;
 }
 
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
 .progress {
     background: #e2e8f0;
     height: 8px;
