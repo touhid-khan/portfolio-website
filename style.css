@@ -475,13 +475,23 @@ section {
     text-align: left;
 }
 
-.contact-form input,
+.contact-form input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
 .contact-form textarea {
     width: 100%;
     padding: 14px;
     margin-bottom: 20px;
     border-radius: 8px;
     border: 1px solid #e2e8f0;
+    resize: vertical;
+    max-height: 180px;
+    min-height: 120px;
 }
 
 .contact-btn {
