@@ -109,7 +109,20 @@ const projectData = {
         description: "Interactive calculator with operator logic and clean UI.",
         link: "https://touhid-khan.github.io/calculator-app/",
         image: "img/calculator.png"
-    }
+    },
+    ecommerce: {
+        title: "E-commerce Website",
+        description: "Responsive e-commerce website with cart logic and modern UI design.",
+        image: "img/ecommerce.jpg",
+        link: "https://touhid-khan.github.io/ecommerce-website/"
+    },
+
+    restaurant: {
+        title: "The Golden Spoon",
+        description: "Elegant Italian restaurant website built with clean layout and modern design.",
+        image: "img/golden-spoon.jpg",
+        link: "https://touhid-khan.github.io/the-golden-spoon/"
+    },
 };
 
 projectCards.forEach(card => {
